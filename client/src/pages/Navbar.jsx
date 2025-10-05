@@ -1,5 +1,5 @@
 import CurrentTime from "./CurrentTime";
-import TodayDate from "./todayDate";
+import TodayDate from "./TodayDate";
 import AppLauncher from "./AppLauncher";
 import {
   MessageSquareWarning,
