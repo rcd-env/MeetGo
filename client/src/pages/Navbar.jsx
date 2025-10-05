@@ -1,5 +1,6 @@
 import CurrentTime from "./CurrentTime";
 import TodayDate from "./todayDate";
+import AppLauncher from "./AppLauncher";
 import {
   MessageSquareWarning,
   Settings,
@@ -24,7 +25,7 @@ function Navbar() {
           <Settings className="cursor-pointer hidden md:inline-block" />
         </div>
         <div className="flex gap-4 items-center">
-          <Grip className="cursor-pointer" />
+          <AppLauncher triggerButton={<Grip className="w-6 h-6" />} />
           <CircleUserRound className="cursor-pointer" />
         </div>
       </div>
