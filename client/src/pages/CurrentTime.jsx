@@ -14,7 +14,7 @@ const CurrentTime = () => {
     hour12: true,
   });
 
-  return <p className="mr-2">{formattedTime}</p>;
+  return <p className="mr-2 hidden md:inline-block">{formattedTime}</p>;
 };
 
 export default CurrentTime;

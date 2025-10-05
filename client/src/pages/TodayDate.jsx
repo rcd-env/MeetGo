@@ -11,7 +11,7 @@ function TodayDate() {
     month: "short",
     day: "numeric",
   });
-  return <p className="ml-2 mr-4">{formattedDate}</p>;
+  return <p className="ml-2 mr-4 hidden md:inline-block">{formattedDate}</p>;
 }
 
 export default TodayDate;
