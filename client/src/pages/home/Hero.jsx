@@ -3,14 +3,16 @@ import { Keyboard, Video } from "lucide-react";
 
 function Hero() {
   return (
-    <div className="flex flex-col gap-4 lg:gap-6 lg:mt-16">
-      <h2 className="text-2xl md:text-5xl">Meet. Talk. Do. Go.</h2>
-      <h3 className="text-lg w-full md:w-3/4">
+    <div className="flex flex-col gap-4 lg:gap-6 mt-12 lg:mt-16">
+      <h2 className="text-3xl text-center md:text-start md:text-5xl">
+        Meet. Talk. Do. Go.
+      </h2>
+      <h3 className="text-lg text-center md:text-start w-full md:w-3/4">
         Start or join a call in seconds, MeetGo makes connecting easy for teams,
         friends, and families.
       </h3>
       <div className="flex flex-col md:flex-row gap-4 md:items-center">
-        <button className="flex gap-2 items-center bg-[#1A73E7] text-white px-4 py-2 rounded-full hover:bg-blue-500 transition order-2 lg:order-1">
+        <button className="flex w-1/2 md:w-auto md:gap-2 justify-around items-center bg-blue-500 text-white px-4 py-2 rounded-full hover:opacity-90 cursor-pointer transition order-2 lg:order-1">
           <Video /> New Meeting
         </button>
         <div className="flex items-center gap-4 order-1 lg:order-2">
@@ -23,7 +25,7 @@ function Hero() {
               className="pl-2 flex-1 outline-none text-gray-700 placeholder-gray-400 bg-transparent"
             />
           </div>
-          <p className="text-gray-500 ">Join</p>
+          <p className="text-gray-500 cursor-pointer">Join</p>
         </div>
       </div>
       <hr className="md:w-3/4" />

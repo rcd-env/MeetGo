@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="w-full px-15 md:px-16 mt-20 flex flex-col lg:flex-row justify-center items-center ">
+      <div className="w-full px-15 md:px-16 mt-0 md:mt-20 flex flex-col lg:flex-row justify-center items-center ">
         <Hero />
         <Info />
       </div>

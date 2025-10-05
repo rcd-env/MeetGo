@@ -73,7 +73,7 @@ function Info() {
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-[75vh] bg-white select-none">
-      <div className="w-full max-w-xl px-4">
+      <div className="w-full px-4">
         {/* Slide Content */}
         <div
           className="flex flex-col items-center text-center space-y-8 overflow-hidden"
@@ -91,7 +91,7 @@ function Info() {
           </div>
 
           {/* Text Section with fade animation */}
-          <div className="min-h-[140px] w-full max-w-md flex flex-col justify-start items-center">
+          <div className=" w-full max-w-md flex flex-col justify-start items-center">
             <div key={currentSlide} className="w-full animate-fadeIn">
               <h2 className="text-2xl font-normal text-black mb-3">
                 {slides[currentSlide].title}

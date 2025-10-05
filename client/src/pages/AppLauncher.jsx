@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const apps = [
-  {
-    name: "Account",
-    logo: "/images/apps/user.png",
-    url: "https://myaccount.google.com/",
-  },
+  //   {
+  //     name: "Account",
+  //     logo: "/images/apps/user.png",
+  //     url: "https://myaccount.google.com/",
+  //   },
   {
     name: "Github",
     logo: "/images/apps/github.png",
