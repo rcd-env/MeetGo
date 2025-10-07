@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Lessgoooo..." });
 });
 
-app.use("/api/auth", authRouter);
+app.use("/api/v1/auth", authRouter);
 
 app.use("*path", (req, res, next) => {
   next(new MyError(404, "Route not found."));
