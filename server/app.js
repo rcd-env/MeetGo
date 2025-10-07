@@ -1,11 +1,15 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const { connectToSocket } = require("./controllers/socket.controller");
+const createServer = require("node:http").createServer;
+
+const app = express();
+const server = createServer(app);
+const io = connectToSocket(server);
 
 const MyError = require("./utils/MyError");
 
-// routers
 const authRouter = require("./routes/auth.route");
 
 app.use(cors());
@@ -33,4 +37,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-module.exports = app;
+module.exports = server;
